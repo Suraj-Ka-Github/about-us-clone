@@ -1,3 +1,349 @@
+:root {
+    --green: #C0F6D4;
+    --navy: #354562;
+    --white: #FFFFFF;
+}
+
+.stop-climate-section {
+    background-image: url(assets/about-us/annie-spratt-427339-unsplash@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 36%;
+    padding: 6.2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-title {
+    font-family: 'flood std';
+    font-weight: 400;
+    font-size: 4.8rem;
+    color: white;
+    margin-bottom: 5rem;
+}
+
+.issue-card {
+    text-align: center;
+    padding: 0rem 3rem;
+    margin-top: 45%;
+}
+
+.mission-section {
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 3rem 1.5em;
+
+    .mission-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+
+        .mission-title {
+
+            padding: 1rem 1rem 1.2rem 1rem;
+        }
+
+        .mission-card-content {
+            text-align: center;
+            font-size: 2.6rem;
+            margin-top: 0.6rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .mission-details {
+        margin: 3rem 1.2rem 1rem 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 3rem 2rem;
+
+        .icon-img {
+            height: 50px;
+            margin-bottom: 0.5rem;
+        }
+
+        .details-title {
+            font-weight: bold;
+            font-size: 2.1rem;
+            margin: 1rem 0rem 1rem 0rem;
+        }
+
+        .details-info {
+            line-height: 2.5rem;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.team-section {
+    /* margin: 4%; */
+    padding: 2rem 1.5rem;
+
+    .team-card {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        .team-title {
+            background-color: var(--navy);
+            color: white;
+            padding: 0.8rem 2rem;
+        }
+
+        .title-info {
+            text-align: center;
+            color: var(--navy);
+        }
+
+        .team-message {
+            font-size: 1.8rem;
+            text-align: center;
+            color: var(--navy);
+        }
+    }
+
+    .person-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 1.5rem;
+
+        .image {
+            width: 100%;
+        }
+
+        .info-card {
+            display: flex;
+            flex-direction: column;
+
+            .name-info {
+                color: var(--white);
+                background-color: var(--navy);
+                padding: 1rem 1.5rem;
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+            }
+        }
+    }
+}
+
+.impact-section {
+    background-image: url("assets/about-us/Impact Background@2x.png");
+    background-color: var(--navy);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4rem 2rem;
+
+    .container {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .impact-headline {
+        font-size: 2.6rem;
+        font-weight: bold;
+        text-align: center;
+        margin: 5% 0%;
+
+    }
+
+    .impact-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 5.5rem;
+    }
+
+    .impact-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quantity {
+        margin-bottom: 0;
+    }
+
+    .card-content {
+        font-size: 2rem;
+        font-weight: 600;
+        /* margin-inline: 8rem; */
+        margin-inline: 8%;
+
+
+    }
+}
+
+.take-a-look-section {
+    background-color: var(--navy);
+    padding: 1.8rem 1.5rem;
+
+    .take-a-look-section-header {
+        position: relative;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+
+        .future-info {
+            color: #fff;
+            font-family: "Flood Std";
+            font-size: 2.8rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .arrow {
+            position: absolute;
+            bottom: -57%;
+            right: 0;
+
+
+            background-color: var(--green);
+            height: 5rem;
+            width: 5rem;
+            padding: 1rem;
+            border-radius: 50%;
+        }
+
+        .cards-container {
+            overflow-x: auto;
+            padding-inline: 1%;
+        }
+
+        .sliding-cards {
+            display: flex;
+            width: 300%;
+            gap: 1.5rem;
+
+            .sliding-card-container {
+                max-width: 100%;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .year {
+                    padding: 3% 18%;
+                    transform: translateY(50%);
+                }
+
+                .image {
+                    width: 100%;
+                }
+
+                .image-card {
+                    background-color: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 1.5rem;
+                    padding: 1.5rem;
+
+                    .card-title {
+                        color: var(--navy);
+                        font-weight: 700;
+                        font-size: 2.5rem;
+                        text-align: center;
+                    }
+
+                    .card-content {
+                        text-align: center;
+                        font-size: 1.8rem;
+                        color: var(--navy);
+                        line-height: 2rem;
+                    }
+                }
+            }
+        }
+
+        .circle {
+            display: flex;
+            gap: 0.7rem;
+            margin: auto;
+            margin-top: 2rem;
+
+            p {
+                height: 1.5rem;
+                width: 1em;
+                background-color: white;
+                border-radius: 2rem;
+            }
+
+            .first-child {
+                background-color: var(--navy);
+                border: 0.5px solid white;
+            }
+        }
+    }
+}
+
+
+/*  */
+.email-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    button {
+        padding: 0.8rem 0.7rem;
+        flex-grow: 1;
+    }
+
+    .email-input {
+        border-radius: 5rem;
+        border: none;
+        flex-grow: 2;
+        font-size: 1.5rem;
+        padding: 0rem 2rem;
+    }
+}
+
+.footer-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
+    column-gap: 3rem;
+    row-gap: 5rem;
+
+    ul {
+        li:first-of-type {
+            margin-bottom: 1rem;
+        }
+    }
+
+    /* .contact-us-container,
+    .learn-more-container {
+        justify-self: center;
+    } */
+
+    .section-title {
+        text-align: right;
+        color: var(--navy-blue);
+        grid-area: 3 / 1 / 4 / 3;
+    }
+
+}
+
 @media screen and (min-width: 998px) {
     .header {
         margin: 0% 19%;
@@ -9,15 +355,13 @@
 
     .container {
         max-width: 1200px;
+        margin: 0 auto;
     }
 
     html {
         font-size: 0.68rem;
     }
 
-    .container {
-        margin: 0 auto;
-    }
 
     .title-nav-container {
         flex-direction: row;
@@ -52,4 +396,232 @@
             }
         }
     }
+
+    .stop-climate-container {
+        display: flex;
+        justify-content: space-between  ;
+
+        .issue-card {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 0%;
+            width: 50%;
+            padding: 0rem 3rem;
+            transform:  translateY(40%);
+        }
+
+        .section-title {
+            font-size: 8rem;
+            transform: translateY(15%);
+        }
+
+        .heading {
+            font-size: 3.2rem;
+        }
+
+        .issue-card-content {
+            text-align: left;
+        }
+    }
+
+    .mission-section-container {
+        padding: 5% 0%;
+
+        .mission-card {
+            align-items: flex-start;
+
+            .mission-card-content {
+                text-align: left;
+                font-size: 4.5rem;
+            }
+        }
+
+        .mission-details {
+            margin-top: 7rem;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-gap: 3rem 2rem;
+
+            .details-title {
+                font-size: 2rem;
+            }
+
+            .details-info {
+                font-size: 1.7rem;
+            }
+        }
+    }
+
+    .team-section-container {
+        margin: auto;
+
+        .team-card {
+            margin-bottom: 2rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 1rem;
+
+            .team-title {
+                width: fit-content;
+                padding: 0.8rem 2.2rem;
+            }
+
+            .title-info {
+                text-align: left;
+                width: 33rem;
+                grid-area: 2/1/3/1;
+                font-size: 3rem;
+            }
+
+            .team-message {
+                width: 43rem;
+                text-align: left;
+                grid-area: 2/2/3/3;
+                font-size: 2rem;
+            }
+        }
+
+        .person-info {
+            margin-top: 4%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 2.5rem 4rem;
+
+            .image {
+                width: 90%;
+            }
+
+            .info-card {
+                .name-info {
+                    padding: 1rem 1rem;
+                    transform: translate(10%, -50%);
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+    .impact-section {
+        padding: 6%;
+
+        .impact-headline {
+            font-size: 3.8rem;
+            margin-inline: 18%;
+        }
+
+        .impact-cards {
+            flex-direction: row;
+        }
+
+        .quantity {
+            font-size: 5.5rem;
+        }
+        .card-info{
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+    }
+
+    .take-a-look-section .container {
+        margin: auto;
+
+        .take-a-look-section-header{
+            .take-a-look-heading {
+                text-align: left;
+            }
+
+            .arrow {
+                bottom: 50%;
+                transform: translateY(50%);
+            }
+        }
+
+        .sliding-cards {
+            display: flex;
+            width: 125%;
+            gap: 2.5rem;
+
+            .sliding-card-container {
+                .white-card-title {
+                    padding: 0.7rem 4rem;
+                    transform: translate(-50%, 50%);
+                }
+
+                .image-card {
+                    padding: 4.5rem;
+                    .card-title {
+                        text-align: left;
+                        font-size: 2.5rem;
+                    }
+
+                    .card-content {
+                        margin: 2rem 0rem;
+                        text-align: left;
+                        font-size: 1.6rem;
+                        line-height: 1.7rem;
+                    }
+
+                    .green-button {
+                        align-self: flex-start;
+                    }
+                }
+            }
+        }
+    }
+
+    .subscribe-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 3rem;
+
+        .heading-2 {
+            white-space: pre-line;
+            align-self: start;
+            margin-bottom: 3.5rem;
+            font-size: 2.4rem;
+        }
+        .email-container {
+            flex-wrap: nowrap;
+            flex-grow: 1;
+            gap: 2rem;
+
+            .email-input {
+                font-size: 1.6rem;
+                padding: 0rem 2rem;
+                text-align: left;
+                flex-grow: 2;
+            }
+        }
+    }
+
+
+    .footer-section {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2rem;
+
+        ul {
+            width: 100%;
+
+            & li:first-of-type {
+                border-bottom: 2px solid var(--navy-blue);
+            }
+        }
+
+        .learn-more-container {
+            width: 100%;
+
+            grid-area: 1 / 4 / 2 / 5;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            grid-area: 1 / 5 / 2 / 6;
+            text-align: right;
+        }
+    }
+
+    
 }
